@@ -1,0 +1,51 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body{
+    background: #f1f1f1;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #ef6c00 !important;
+}
+/* label underline focus color */
+.input-field input:focus {
+    border-bottom: 1px solid #ef6c00 !important;
+    caret-color: #ef6c00;
+    box-shadow: 0 1px 0 0 #ef6c00 !important;
+}
+
+/* valid color */
+.input-field input.valid {
+    border-bottom: 1px solid #ef6c00;
+    box-shadow: 0 1px 0 0 #ef6c00;
+}
+/* invalid color */
+.input-field input.invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #ef6c00;
+}
+
+.material-icons{
+    color: #666666;
+}

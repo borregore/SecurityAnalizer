@@ -1,0 +1,56 @@
+<%= render "layouts/login_header.html.erb" %>
+<div class="row">
+  <div class="col s8 offset-s2">
+    <div class="row">
+      <div class="col s12">
+        <div class="card  grey lighten-5">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Create Account</span>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_email" type="email" class="validate">
+                    <label for="icon_email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="icon_password" type="password" class="validate">
+                    <label for="icon_password">Password</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="icon_password" type="password" class="validate">
+                    <label for="icon_password">Confirm Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 center">
+                    <button class="btn waves-effect waves-light orange darken-4" type="submit" name="action">Create Account
+                      <i class="material-icons right white-text">send</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="card-action center">
+            <p class="">Have an account?</p>
+            <%= link_to 'Log In', login_index_path, class: "btn-flat" %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
