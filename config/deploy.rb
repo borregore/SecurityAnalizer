@@ -1,7 +1,7 @@
 # Change these
 server '178.128.186.156', port: 30000, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:username/appname.git'
+set :repo_url,        'git@github.com:gmotzespina/SecurityAnalizer.git'
 set :application,     'VulnerabilityScanner'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
