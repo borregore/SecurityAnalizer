@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require materialize
 //= require activestorage
+//= require highcharts/highcharts
 //= require turbolinks
 //= require_tree .
