@@ -1,0 +1,2 @@
+class AnalizedSiteController < ApplicationController
+end
