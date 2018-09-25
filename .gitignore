@@ -16,6 +16,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.idea
+.idea/workspace.xml
+
 
 # Ignore uploaded files in development
 /storage/*
