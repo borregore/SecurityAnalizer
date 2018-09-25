@@ -1,4 +1,5 @@
 <%= render "layouts/app_header.html.erb" %>
+<%= javascript_include_tag 'dashboard' %>
 <div class="row">
   <div class="col s10 offset-s1">
     <div class="col s4">
@@ -51,9 +52,8 @@
         <div class="card-content white-text">
           <span class="card-title black-text">Active Vulnerabilities</span>
 
-          <div class="row">
-            <h4 class="black-text center">430</h4>
-          </div>
+          <div id="container"></div>
+
 
         </div>
 
@@ -66,9 +66,9 @@
 
 
           <div class="collection">
-            <a href="#!" class="collection-item">https://nearsoft.com</a>
-            <a href="#!" class="collection-item">https://www.facebook.com</a>
-            <a href="#!" class="collection-item">https://www.google.com</a>
+            <%= link_to 'https://nearsoft.com', analized_site_index_path, class: "collection-item" %>
+            <%= link_to 'https://facebook.com', analized_site_index_path, class: "collection-item" %>
+            <%= link_to 'https://google.com', analized_site_index_path, class: "collection-item" %>
           </div>
 
 

@@ -39,7 +39,8 @@ gem 'pg'
 
 gem 'materialize-sass', '~> 1.0.0'
 gem 'jquery-rails'
-#gem 'material_icons'
+
+gem "lazy_high_charts"
 
 
 # Reduces boot times through caching; required in config/boot.rb
