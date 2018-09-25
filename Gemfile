@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 #
 gem 'devise'
+gem 'pg'
 
 
 gem 'materialize-sass', '~> 1.0.0'
