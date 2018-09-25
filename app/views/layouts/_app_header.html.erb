@@ -1,0 +1,22 @@
+<nav class="nav-extended">
+  <div class="nav-wrapper light-blue darken-4">
+    <a href="#" class="brand-logo">Vulnerability Scanner</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to raw('<i class="material-icons white-text">exit_to_app</i>'), login_index_path %></li>
+    </ul>
+  </div>
+  <div class="row light-blue darken-1">
+    <div class="col s12">
+      <ul class="tabs tabs-transparent">
+        <li class="tab col s4 <%= 'active' if current_page?(scan_urls_index_path) %>"><%= link_to raw('<i class="material-icons white-text">search</i>'), scan_urls_index_path %></li>
+        <li class="tab col s4 <%= 'active' if current_page?(dashboard_index_path) %>"><%= link_to raw('<i class="material-icons white-text">history</i>'), dashboard_index_path %></li>
+        <li class="tab col s4 <%= 'active' if current_page?(configuration_index_path) %>"><%= link_to raw('<i class="material-icons white-text">build</i>'), configuration_index_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="sass.html"><i class="material-icons white-text">exit_to_app</i></a></li>
+</ul>

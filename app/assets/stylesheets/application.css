@@ -46,6 +46,11 @@ body{
     color: #ef6c00;
 }
 
+.input-field .prefix.active {
+    color: #ef6c00;
+}
+
+
 .material-icons{
     color: #666666;
 }

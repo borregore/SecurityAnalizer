@@ -1,0 +1,2 @@
+module ScanUrlsHelper
+end

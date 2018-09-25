@@ -1,0 +1,138 @@
+<%= render "layouts/app_header.html.erb" %>
+
+<div class="row">
+  <div class="col s8 offset-s2">
+    <div class="row">
+      <div class="col s12">
+        <div class="card  grey lighten-5">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Add URLs</span>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="col s6">
+
+                      <% (1..6).each do |i| %>
+                      <div class="input-field">
+                        <i class="material-icons prefix">link</i>
+                        <input id="url" type="text" class="validate">
+                        <label for="url">Url<% i %></label>
+                      </div>
+                      <% end %>
+
+
+                  </div>
+                  <div class="col s1">
+                    <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="col s5">
+
+                    <div class="row">
+                      <div class="col s6">
+                        <p>
+                          <label>
+                            <input type="checkbox"/>
+                            <span>XSS</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s6"><p>
+                        <label>
+                          <input type="checkbox"/>
+                          <span>A2</span>
+                        </label>
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s6">
+                        <p>
+                          <label>
+                            <input type="checkbox"/>
+                            <span>A3</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s6"><p>
+                        <label>
+                          <input type="checkbox"/>
+                          <span>A4</span>
+                        </label>
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s6">
+                        <p>
+                          <label>
+                            <input type="checkbox"/>
+                            <span>A5</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s6"><p>
+                        <label>
+                          <input type="checkbox"/>
+                          <span>A6</span>
+                        </label>
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s6">
+                        <p>
+                          <label>
+                            <input type="checkbox"/>
+                            <span>A7</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s6"><p>
+                        <label>
+                          <input type="checkbox"/>
+                          <span>A8</span>
+                        </label>
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s6">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="checkbox-orange"/>
+                            <span>A9</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s6"><p>
+                        <label>
+                          <input type="checkbox" class="checkbox-orange"/>
+                          <span>A10</span>
+                        </label>
+                      </p>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 center">
+                    <button class="btn waves-effect waves-light orange darken-4" type="submit" name="action">Scan
+                      <i class="material-icons right white-text">search</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
