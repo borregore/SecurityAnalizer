@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require materialize
+//= require rails-ujs
 //= require activestorage
 //= require highcharts/highcharts
 //= require turbolinks

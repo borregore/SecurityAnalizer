@@ -3,7 +3,7 @@
     <a href="#" class="brand-logo">Vulnerability Scanner</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><%= link_to raw('<i class="material-icons white-text">exit_to_app</i>'), login_index_path %></li>
+      <li><%= link_to raw('<i class="material-icons white-text">exit_to_app</i>'), destroy_user_session_path, method: :delete %></li>
     </ul>
   </div>
   <div class="row light-blue darken-1">
